@@ -1,0 +1,219 @@
+---
+title: "Our Services | Khem's Auto Care"
+description: "Explore the professional auto detailing and maintenance services offered by Khem's Auto Care."
+permalink: "/services/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Our Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link cs-active">Our Services</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' %}">
+            <img src="{% getUrl '/assets/images/car1.jpg' %}" alt="auto detailing service" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+
+    <!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1062">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Select Your Service Package</span>
+            <h2 class="cs-title">Auto Detailing Packages</h2>
+            <p class="cs-text">
+                Choose from our professional auto detailing packages to keep your vehicle looking brand new. We provide a range of services from basic cleaning to full interior and exterior detailing, along with optional add-ons for extra care.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <!-- Basic Detail Package -->
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car1.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Basic Detail</h3>
+                <h4 class="cs-h4">$40 Cars | $50 SUVs</h4>
+                <p class="cs-item-text">
+                    Includes exterior wash, wheels and rims cleaning, door jambs and arches cleaned, window cleaning, and plastic trim dressing. Perfect for keeping your car fresh and polished.
+                </p>
+            </li>
+
+            <!-- Full Detail Package -->
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car2.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Full Detail</h3>
+                <h4 class="cs-h4">$100 Cars | $120 SUVs</h4>
+                <p class="cs-item-text">
+                    Comprehensive interior and exterior cleaning including steam-cleaned seats and carpets, full exterior wash and wax, leather conditioning, dashboard and air vent steam cleaning, interior shampoo, disinfecting, deodorizing, and all glass cleaned.
+                </p>
+            </li>
+
+            <!-- Add-On Services -->
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car3.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Optional Add-Ons</h3>
+                <h4 class="cs-h4">Request a Quote</h4>
+                <p class="cs-item-text">
+                    Enhance your detailing experience with optional services such as one-step paint correction, clay bar treatment, hand waxing, steam-cleaned engine bay, engine dress-up, and headliner steam cleaning.
+                </p>
+            </li>
+        </ul>
+                <a href="" class="cs-button-solid">Book Appointment</a>
+
+    </div>
+    
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->        
+
+<section id="services-1191">
+    <div class="cs-container">
+<div class="cs-content">
+    <span class="cs-topper">Our Services</span>
+    <h2 class="cs-title">Professional Auto Detailing</h2>
+    <p class="cs-text">
+        At KhemsAutoCare, we offer complete auto detailing services designed to clean, restore, and protect your vehicle inside and out. Every service is performed using professional-grade products and expert care.
+    </p>
+</div>
+<!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
+<div class="cs-wrapper">
+    <!--Car-->
+    <picture class="cs-image">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png" alt="car" width="510" height="193" aria-hidden="true">
+    </picture>
+
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/engineering%201%20red.svg"
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Exterior Detailing</h3>
+                <p class="cs-item-text">
+                    Complete exterior wash, paint-safe cleaning, waxing, trim dressing, wheel and rim cleaning, and door jamb detailing.
+                </p>
+            </div>
+        </li>
+
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brake-red.svg"
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Interior Detailing</h3>
+                <p class="cs-item-text">
+                    Deep interior cleaning including seats, carpets, headliner, dashboard, door panels, and interior shampooing.
+                </p>
+            </div>
+        </li>
+
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/alloy-wheel-red.svg "
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Steam Cleaning</h3>
+                <p class="cs-item-text">
+                    Professional steam cleaning for seats, carpets, air vents, dashboards, and hard-to-reach interior areas.
+                </p>
+            </div>
+        </li>
+
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/motor%201%20red.svg"
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Engine Bay Detailing</h3>
+                <p class="cs-item-text">
+                    Steam-cleaned engine bay with careful degreasing and professional engine dress-up.
+                </p>
+            </div>
+        </li>
+
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/air-conditioner-red.svg"
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Paint Correction & Protection</h3>
+                <p class="cs-item-text">
+                    Clay bar treatment, one-step paint correction, and hand waxing to enhance shine and protect your paint.
+                </p>
+            </div>
+        </li>
+
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/contamination-red.svg"
+                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+            </picture>
+            <div class="cs-text-group">
+                <h3 class="cs-h3">Disinfecting & Deodorizing</h3>
+                <p class="cs-item-text">
+                    Interior disinfecting, odor removal, and deodorizing to leave your vehicle fresh and sanitized.
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+</section>
+
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
