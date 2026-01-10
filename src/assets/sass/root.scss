@@ -1660,7 +1660,7 @@
   #hero-1619 .cs-icon {
     width: 3rem;
     height: auto;
-    margin: 0 0 1.5rem 0;
+	color: black;
   }
   #hero-1619 .cs-h3 {
     /* 20px - 25px */
@@ -1742,13 +1742,13 @@
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-1619 .cs-item {
-    grid-column: span 3;
+    grid-column: span 4;
   }
 }
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
   #hero-1619 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg");
+    background: url("/src/assets/images/car1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2087,6 +2087,17 @@
 	color: black;
 }
 
+#hero-1619 .cs-h4{
+	margin-bottom: 12px;
+	color: black;
+}
+
+.cs-card-group .cs-item{
+	grid-column: span 4;
+
+}
+
+
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -2217,4 +2228,13 @@
     }
 }
 
-                                
+.cs-icon-wrapper{
+	        width: 4.25rem;
+        height: 4.25rem;
+        margin: 0 0 1.5rem 0;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
