@@ -2238,3 +2238,26 @@
         align-items: center;
         position: relative;
 }
+
+.credits{
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.credits p{
+    color: var(--bodyTextColor);
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+}
+
+
+.credits p a{
+    color: var(--bodyTextColor);
+    text-align: center;
+    margin: 0 auto;
+    font-size: small;
+}

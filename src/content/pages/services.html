@@ -116,13 +116,15 @@ permalink: "/services/"
 <!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
 <div class="cs-wrapper">
     <!--Car-->
-    <picture class="cs-image cs-hide-on-mobile">
+    <div class="cs-hide-on-mobile">
+    <picture class="cs-image ">
         <!--Mobile Image-->
         <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
         <!--Tablet and above Image-->
         <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
         <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png" alt="car" width="510" height="193" aria-hidden="true">
     </picture>
+    </div>
 
     <ul class="cs-card-group">
         <li class="cs-item">
@@ -210,6 +212,7 @@ permalink: "/services/"
         </li>
     </ul>
 </div>
+ <a href="/contact/" class="cs-button-solid">Schedule An Appointment</a>
     </div>
 </section>
 
