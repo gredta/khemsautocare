@@ -2242,21 +2242,20 @@
 .credits{
     text-align: center;
     margin: 0 auto;
-    background-color: #fff;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    background-color: #fff !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .credits p{
-    color: var(--bodyTextColor);
     text-align: center;
     margin: 0 auto;
     font-size: small;
+	color: #000 !important;
 }
 
 
 .credits p a{
-    color: var(--bodyTextColor);
     text-align: center;
     margin: 0 auto;
     font-size: small;
