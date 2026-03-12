@@ -1820,6 +1820,22 @@
 	}
 }
 
+/* Dark Mode - Force dark text in white-background cards */
+body.dark-mode {
+	#hero-1619 .cs-item,
+	#services-1062 .cs-item {
+		.cs-h3,
+		.cs-h4 {
+			color: var(--headerColor);
+		}
+
+		.cs-item-text,
+		.cs-item-text li {
+			color: var(--bodyTextColor);
+		}
+	}
+}
+
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
