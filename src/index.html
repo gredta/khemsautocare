@@ -1,81 +1,92 @@
 ---
 title: "KhemsAutoCare | Car Detailing Services"
-description: "KhemsAutoCare is a professional car detailing business in Jamaica, NY offering expert interior, exterior, and engine detailing with premium products."
+description: "KhemsAutoCare is a professional car detailing business in Jamaica, NY offering expert interior, exterior,
+and engine detailing with premium products."
 permalink: "/"
-tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+tags: "sitemap" # Ensures the root page is included in sitemap generation
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Critical styles are loaded first -->
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<!-- Critical styles are loaded first -->
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
-    {% if client.isProduction %}
-        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="/assets/css/local.css">
-        </noscript>
+<!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+{% if client.isProduction %}
+<link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="/assets/css/local.css">
+</noscript>
 
-    {% else %}
-        <link rel="stylesheet" href="/assets/css/local.css" />
-    {% endif %}
+{% else %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+{% endif %}
 
-    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
-    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
-    <!-- {% include "components/home-schema.html" %} -->
+<!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+<!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+<!-- {% include "components/home-schema.html" %} -->
 {% endblock %}
 
 {% block body %}
 
- <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
 <section id="hero-1619">
-<div class="cs-container">
-    <div class="cs-content">
-        <span class="cs-topper">
-            Professional Car Detailing
-        </span>
-        <h1 class="cs-title">Keep Your Car Looking Brand New With Expert Detailing Services</h1>
-        <a href="/contact/" class="cs-button-solid">Schedule an Appointment</a>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">
+                Professional Car Detailing
+            </span>
+            <h1 class="cs-title">Keep Your Car Looking Brand New With Expert Detailing Services</h1>
+            <a href="/contact/" class="cs-button-solid">Schedule an Appointment</a>
         </div>
- <ul class="cs-card-group">
+        <ul class="cs-card-group">
             <!-- Basic Detail Package -->
             <li class="cs-item">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car1.svg" alt="car" width="48" height="48">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car1.svg" alt="car" width="48"
+                        height="48">
                 </picture>
                 <h3 class="cs-h3">Basic Detail</h3>
                 <h4 class="cs-h4">$40 Cars | $50 SUVs</h4>
                 <p class="cs-item-text">
-                    Includes exterior wash, wheels and rims cleaning, door jambs and arches cleaned, window cleaning, and plastic trim dressing. Perfect for keeping your car fresh and polished.
+                    Includes exterior wash, wheels and rims cleaning, door jambs and arches cleaned, window cleaning,
+                    and plastic trim dressing. Perfect for keeping your car fresh and polished.
                 </p>
             </li>
 
             <!-- Full Detail Package -->
             <li class="cs-item">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car2.svg" alt="car" width="48" height="48">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car2.svg" alt="car" width="48"
+                        height="48">
                 </picture>
                 <h3 class="cs-h3">Full Detail</h3>
-                <h4 class="cs-h4">$100 Cars | $120 SUVs</h4>
+                <h4 class="cs-h4">$120 Cars | $140 SUVs</h4>
                 <p class="cs-item-text">
-                    Comprehensive interior and exterior cleaning including steam-cleaned seats and carpets, full exterior wash and wax, leather conditioning, dashboard and air vent steam cleaning, interior shampoo, disinfecting, deodorizing, and all glass cleaned.
+                    Comprehensive interior and exterior cleaning including steam-cleaned seats and carpets, full
+                    exterior wash and wax, leather conditioning, dashboard and air vent steam cleaning, interior
+                    shampoo, disinfecting, deodorizing, and all glass cleaned.
                 </p>
             </li>
 
             <!-- Add-On Services -->
             <li class="cs-item">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car3.svg" alt="car" width="48" height="48">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/car3.svg" alt="car" width="48"
+                        height="48">
                 </picture>
                 <h3 class="cs-h3">Optional Add-Ons</h3>
                 <h4 class="cs-h4">Request a Quote</h4>
                 <p class="cs-item-text">
-                    Enhance your detailing experience with optional services such as one-step paint correction, clay bar treatment, hand waxing, steam-cleaned engine bay, engine dress-up, and headliner steam cleaning.
+                    Enhance your detailing experience with optional services such as one-step paint correction, clay bar
+                    treatment, hand waxing, steam-cleaned engine bay, engine dress-up, and headliner steam cleaning.
                 </p>
             </li>
         </ul>
@@ -90,128 +101,137 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <img decoding="async" src="/assets/images/car1.jpg" alt="meeting" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
-                        
+
 <!-- ============================================ -->
 <!--                   Services                   -->
-<!-- ============================================ -->        
+<!-- ============================================ -->
 
 <section id="services-1191">
     <div class="cs-container">
-<div class="cs-content">
-    <span class="cs-topper">Our Services</span>
-    <h2 class="cs-title">Professional Auto Detailing</h2>
-    <p class="cs-text">
-        At KhemsAutoCare, we offer complete auto detailing services designed to clean, restore, and protect your vehicle inside and out. Every service is performed using professional-grade products and expert care.
-    </p>
-</div>
-<!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
-<div class="cs-wrapper">
-    <!--Car-->
-    <div class="cs-hide-on-mobile">
-    <picture class="cs-image ">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png" alt="car" width="510" height="193" aria-hidden="true">
-    </picture>
-    </div>
-
-    <ul class="cs-card-group">
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/engineering%201%20red.svg"
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Exterior Detailing</h3>
-                <p class="cs-item-text">
-                    Complete exterior wash, paint-safe cleaning, waxing, trim dressing, wheel and rim cleaning, and door jamb detailing.
-                </p>
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Professional Auto Detailing</h2>
+            <p class="cs-text">
+                At KhemsAutoCare, we offer complete auto detailing services designed to clean, restore, and protect your
+                vehicle inside and out. Every service is performed using professional-grade products and expert care.
+            </p>
+        </div>
+        <!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
+        <div class="cs-wrapper">
+            <!--Car-->
+            <div class="cs-hide-on-mobile">
+                <picture class="cs-image ">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png" alt="car"
+                        width="510" height="193" aria-hidden="true">
+                </picture>
             </div>
-        </li>
 
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brake-red.svg"
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Interior Detailing</h3>
-                <p class="cs-item-text">
-                    Deep interior cleaning including seats, carpets, headliner, dashboard, door panels, and interior shampooing.
-                </p>
-            </div>
-        </li>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/engineering%201%20red.svg"
+                            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Exterior Detailing</h3>
+                        <p class="cs-item-text">
+                            Complete exterior wash, paint-safe cleaning, waxing, trim dressing, wheel and rim cleaning,
+                            and door jamb detailing.
+                        </p>
+                    </div>
+                </li>
 
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/alloy-wheel-red.svg "
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Steam Cleaning</h3>
-                <p class="cs-item-text">
-                    Professional steam cleaning for seats, carpets, air vents, dashboards, and hard-to-reach interior areas.
-                </p>
-            </div>
-        </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brake-red.svg"
+                            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Interior Detailing</h3>
+                        <p class="cs-item-text">
+                            Deep interior cleaning including seats, carpets, headliner, dashboard, door panels, and
+                            interior shampooing.
+                        </p>
+                    </div>
+                </li>
 
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/motor%201%20red.svg"
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Engine Bay Detailing</h3>
-                <p class="cs-item-text">
-                    Steam-cleaned engine bay with careful degreasing and professional engine dress-up.
-                </p>
-            </div>
-        </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/alloy-wheel-red.svg "
+                            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Steam Cleaning</h3>
+                        <p class="cs-item-text">
+                            Professional steam cleaning for seats, carpets, air vents, dashboards, and hard-to-reach
+                            interior areas.
+                        </p>
+                    </div>
+                </li>
 
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/air-conditioner-red.svg"
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Paint Correction & Protection</h3>
-                <p class="cs-item-text">
-                    Clay bar treatment, one-step paint correction, and hand waxing to enhance shine and protect your paint.
-                </p>
-            </div>
-        </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/motor%201%20red.svg" loading="lazy"
+                            decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Engine Bay Detailing</h3>
+                        <p class="cs-item-text">
+                            Steam-cleaned engine bay with careful degreasing and professional engine dress-up.
+                        </p>
+                    </div>
+                </li>
 
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/contamination-red.svg"
-                    loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-            </picture>
-            <div class="cs-text-group">
-                <h3 class="cs-h3">Disinfecting & Deodorizing</h3>
-                <p class="cs-item-text">
-                    Interior disinfecting, odor removal, and deodorizing to leave your vehicle fresh and sanitized.
-                </p>
-            </div>
-        </li>
-    </ul>
-</div>
- <a href="/contact/" class="cs-button-solid">Schedule An Appointment</a>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/air-conditioner-red.svg"
+                            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Paint Correction & Protection</h3>
+                        <p class="cs-item-text">
+                            Clay bar treatment, one-step paint correction, and hand waxing to enhance shine and protect
+                            your paint.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/contamination-red.svg"
+                            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Disinfecting & Deodorizing</h3>
+                        <p class="cs-item-text">
+                            Interior disinfecting, odor removal, and deodorizing to leave your vehicle fresh and
+                            sanitized.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Schedule An Appointment</a>
     </div>
 </section>
 
 
 
 
-                                
-                                
+
+
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
@@ -223,120 +243,188 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             <source media="(max-width: 600px)" srcset="/assets/images/car1.jpg">
             <!-- Tablet and above Image -->
             <source media="(min-width: 601px)" srcset="/assets/images/car3.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/car3.jpg" alt="Khemsautocare Car Detailing" width="494" height="700">
+            <img loading="lazy" decoding="async" src="/assets/images/car3.jpg" alt="Khemsautocare Car Detailing"
+                width="494" height="700">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">About Us</span>
             <h2 class="cs-title">Professional Car Detailing in Jamaica, NY</h2>
             <p class="cs-text">
-                Khemsautocare is a premier car detailing business located in Jamaica, NY. Our team of experts is dedicated to providing the highest quality detailing services, ensuring every vehicle that comes to us leaves looking brand new.
+                Khemsautocare is a premier car detailing business located in Jamaica, NY. Our team of experts is
+                dedicated to providing the highest quality detailing services, ensuring every vehicle that comes to us
+                leaves looking brand new.
             </p>
             <p class="cs-text">
-                We specialize in exterior and interior detailing, engine cleaning, and many other services. Using only the best products and equipment, we deliver top-notch care for every car. At Khemsautocare, we are passionate about cars and believe every vehicle deserves the best attention.
+                We specialize in exterior and interior detailing, engine cleaning, and many other services. Using only
+                the best products and equipment, we deliver top-notch care for every car. At Khemsautocare, we are
+                passionate about cars and believe every vehicle deserves the best attention.
             </p>
             <a href="/contact/" class="cs-button-solid">Schedule an Appointment</a>
         </div>
     </div>
 </section>
 
-                                
-   
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
 
 <section id="gallery-48">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Gallery</span>
             <h2 class="cs-title">
-                Precision Detailing for a Flawless Finish            </h2>
+                Precision Detailing for a Flawless Finish </h2>
         </div>
         <div class="cs-image-group">
 
             <!-- Row 1 -->
             <div class="cs-row cs-row-1">
                 <picture class="cs-picture cs-picture-1">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car1.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 1" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car1.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car1.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 1" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-2">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car2.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 2" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car2.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car2.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 2" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-3">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car3.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 3" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car3.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car3.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 3" loading="lazy" decoding="async">
                 </picture>
             </div>
 
             <!-- Row 2 -->
             <div class="cs-row cs-row-2">
                 <picture class="cs-picture cs-picture-1">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car4.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 4" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car4.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 4" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-2">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car5.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 5" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car5.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car5.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 5" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-3">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car6.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 6" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car6.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car6.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 6" loading="lazy" decoding="async">
                 </picture>
             </div>
 
             <!-- Row 3 -->
             <div class="cs-row cs-row-3">
                 <picture class="cs-picture cs-picture-1">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car7.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 7" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car7.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car7.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 7" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-2">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car8.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 8" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car8.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car8.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 8" loading="lazy" decoding="async">
                 </picture>
 
                 <picture class="cs-picture cs-picture-3">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 182 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 634 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 826 }) | avif %}" type="image/avif">
-                    <img src="{% getUrl '/assets/images/car13.jpg' | resize({ width: 826 }) | jpeg %}" alt="portfolio image 9" loading="lazy" decoding="async">
+                    <source media="(max-width: 600px)"
+                        srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 182 }) | avif %}"
+                        type="image/avif">
+                    <source media="(max-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 634 }) | avif %}"
+                        type="image/avif">
+                    <source media="(min-width: 1024px)"
+                        srcset="{% getUrl '/assets/images/car13.jpg' | resize({ width: 826 }) | avif %}"
+                        type="image/avif">
+                    <img src="{% getUrl '/assets/images/car13.jpg' | resize({ width: 826 }) | jpeg %}"
+                        alt="portfolio image 9" loading="lazy" decoding="async">
                 </picture>
             </div>
-    
+
         </div>
     </div>
 </section>
 
 
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-    <section id="reviews-67">
+<section id="reviews-67">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Our Reviews</span>
@@ -344,35 +432,42 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 Words From Our Customers
             </h2>
             <p class="cs-text">
-                Hear what our satisfied customers have to say about their experience with Khemsautocare. We take pride in making every car look brand new.
+                Hear what our satisfied customers have to say about their experience with Khemsautocare. We take pride
+                in making every car look brand new.
             </p>
         </div>
         <ul class="cs-card-group">
             <!-- Review 1 -->
             <li class="cs-item">
                 <p class="cs-item-text">
-                    “Khems services is done with great attention to detail! He takes his time and effort on ensuring your ride is left spotless and well cleaned! Awesome work and wonderful customer service!! Definitely one of the best mobile car detailing services!"
+                    “Khems services is done with great attention to detail! He takes his time and effort on ensuring
+                    your ride is left spotless and well cleaned! Awesome work and wonderful customer service!!
+                    Definitely one of the best mobile car detailing services!"
                 </p>
                 <div class="cs-info">
                     <div class="cs-flex-group">
                         <span class="cs-name">Alicia</span>
                         <span class="cs-desc">Customer</span>
                     </div>
-                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                        src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                 </div>
             </li>
 
             <!-- Review 2 -->
             <li class="cs-item">
                 <p class="cs-item-text">
-                    “A Super Deep cleaning like my car has never had before! The smell it leaves inside the car is as if it were new and I liked that he left me the papers that new cars have on the floor to take care of the dirty stuff, that looked very professional!!!"
+                    “A Super Deep cleaning like my car has never had before! The smell it leaves inside the car is as if
+                    it were new and I liked that he left me the papers that new cars have on the floor to take care of
+                    the dirty stuff, that looked very professional!!!"
                 </p>
                 <div class="cs-info">
                     <div class="cs-flex-group">
                         <span class="cs-name">Joel</span>
                         <span class="cs-desc">Customer</span>
                     </div>
-                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                        src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
                 </div>
             </li>
         </ul>
@@ -381,5 +476,5 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 </section>
 
 
-    {% include 'sections/cta.html' %}
+{% include 'sections/cta.html' %}
 {% endblock %}
