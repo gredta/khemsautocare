@@ -123,6 +123,10 @@
             top: 0;
         }
 
+        video.cs-picture1 {
+            object-fit: cover;
+        }
+
         .cs-picture2 {
             width: calc(414 / 16 * 1em);
             height: calc(400 / 16 * 1em);
