@@ -69,7 +69,7 @@ permalink: "/contact/"
 <!--                Contact Form                  -->
 <!-- ============================================ -->
 
-<section id="cs-contact-265">
+<!-- <section id="cs-contact-265">
     <div class="cs-container">
         <div class="cs-left-section">
             <div class="cs-content">
@@ -105,20 +105,15 @@ permalink: "/contact/"
             </form>
         </div>
         <div class="cs-right-section">
-            <!--Email-->
             <span class="cs-header">Email</span>
             <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-            <!--Phone-->
             <span class="cs-header">Phone</span>
             <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-            <!--Address-->
             <span class="cs-header">Address</span>
             <a class="cs-link">
                 {{ client.address.city }}, {{ client.address.state }}
             </a>
-            <!-- Background Image-->
             <picture class="cs-bg-picture">
-                <!--Mobile Image-->
                 <source media="(max-width: 600px)"
                     srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 576, height: 640 }) | avif %}"
                     type="image/avif">
@@ -128,7 +123,6 @@ permalink: "/contact/"
                 <source media="(max-width: 600px)"
                     srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 576, height: 640 }) | jpeg %}"
                     type="image/jpeg">
-                <!--Tablet Image-->
                 <source media="(max-width: 1024px)"
                     srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 820, height: 1372 }) | avif %}"
                     type="image/avif">
@@ -138,7 +132,6 @@ permalink: "/contact/"
                 <source media="(max-width: 1024px)"
                     srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 820, height: 1372 }) | jpeg %}"
                     type="image/jpeg">
-                <!--Desktop Image-->
                 <source media="(min-width: 1024px)"
                     srcset="{% getUrl '/assets/images/car4.jpg' | resize({ width: 1084, height: 1156 }) | avif %}"
                     type="image/avif">
@@ -153,6 +146,55 @@ permalink: "/contact/"
             </picture>
         </div>
     </div>
+</section> 
+
+============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2320">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch With KhemsAutoCare</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="POST" action="https://formspree.io/f/mlgpnwkn">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+            
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.383043989064!2d-73.78761742392956!3d40.70958347139394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261543b6b6d1b%3A0x596e3a48e341708a!2sKhemsautocare!5e0!3m2!1sen!2sus!4v1774230097507!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-icon" decoding="async" loading="lazy" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/yellow-pin.svg" alt="icon" width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Location</span>
+                    <span class="cs-address">176th St, Jamaica, NY 11432
+                    </span>
+                </div>
+            </div>
+        </div>
+    
 </section>
+                                
 
 {% endblock %}

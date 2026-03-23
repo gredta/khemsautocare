@@ -7,6 +7,7 @@ module.exports = {
         city: "Jamaica",
         state: "NY",
         country: "US",
+        mapLink: "https://maps.app.goo.gl/4FaqkeXBrfDWUDfv9"
     },
     socials: {
         google: "https://share.google/NGsACe4gqnz1oCvgw",
@@ -16,7 +17,7 @@ module.exports = {
         youtube: "https://www.youtube.com/@Khemsautocare",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://khemsautocare.netlify.app/",
+    domain: "https://khemsautocare.com/",
     // Passing the isProduction variable for use in HTML templates
     isProduction: process.env.ELEVENTY_ENV === "PROD",
 };

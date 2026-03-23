@@ -2,7 +2,7 @@
 
 Professional car detailing business website for KhemsAutoCare, based in Jamaica, NY.
 
-🌐 **Live Site:** [khemsautocare.netlify.app](https://khemsautocare.netlify.app/)
+🌐 **Live Site:** [khemsautocare.com](https://khemsautocare.com/)
 
 ## Tech Stack
 
