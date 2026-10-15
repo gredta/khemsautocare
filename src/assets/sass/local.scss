@@ -294,7 +294,8 @@
             margin: 0;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            /* stretches rows 2 & 3 to match the height of row 1 */
+            align-items: stretch;
             /* 8px - 20px */
             gap: clamp(0.5rem, 2vw, 1.25rem);
         }
@@ -340,31 +341,24 @@
             }
         }
 
+        /* rows 2 & 3 have two images each, so they split the height of row 1 */
         .cs-row-2 {
             .cs-picture-1 {
-                height: calc(492 / 16 * 1em);
+                flex: 5;
             }
 
             .cs-picture-2 {
-                height: calc(517 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
+                flex: 4;
             }
         }
 
         .cs-row-3 {
             .cs-picture-1 {
-                height: calc(625 / 16 * 1em);
+                flex: 4;
             }
 
             .cs-picture-2 {
-                height: calc(452 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
+                flex: 5;
             }
         }
     }
