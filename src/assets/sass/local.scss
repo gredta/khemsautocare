@@ -294,8 +294,7 @@
             margin: 0;
             display: flex;
             justify-content: space-between;
-            /* stretches rows 2 & 3 to match the height of row 1 */
-            align-items: stretch;
+            align-items: flex-start;
             /* 8px - 20px */
             gap: clamp(0.5rem, 2vw, 1.25rem);
         }
@@ -341,24 +340,31 @@
             }
         }
 
-        /* rows 2 & 3 have two images each, so they split the height of row 1 */
         .cs-row-2 {
             .cs-picture-1 {
-                flex: 5;
+                height: calc(517 / 16 * 1em);
             }
 
             .cs-picture-2 {
-                flex: 4;
+                height: calc(562 / 16 * 1em);
+            }
+
+            .cs-picture-3 {
+                height: calc(629 / 16 * 1em);
             }
         }
 
         .cs-row-3 {
             .cs-picture-1 {
-                flex: 4;
+                height: calc(625 / 16 * 1em);
             }
 
             .cs-picture-2 {
-                flex: 5;
+                height: calc(452 / 16 * 1em);
+            }
+
+            .cs-picture-3 {
+                height: calc(629 / 16 * 1em);
             }
         }
     }
