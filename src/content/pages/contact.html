@@ -171,9 +171,63 @@ permalink: "/contact/"
                     Phone
                     <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
                 </label>
+                <label class="cs-label cs-half">
+                    Vehicle Make &amp; Model
+                    <input class="cs-input" required type="text" name="vehicle-model" placeholder="e.g. Honda Civic">
+                </label>
+                <label class="cs-label cs-half">
+                    Vehicle Year
+                    <input class="cs-input" required type="number" name="vehicle-year" placeholder="e.g. 2019" min="1900" max="2100">
+                </label>
+                <label class="cs-label">
+                    Availability
+                    <input class="cs-input" required type="text" name="availability" placeholder="e.g. Weekdays after 5pm, Saturday mornings">
+                </label>
+                <fieldset class="cs-fieldset">
+                    <legend class="cs-legend">Package</legend>
+                    <label class="cs-option">
+                        <input required type="radio" name="package" value="Basic Detail">
+                        Basic Detail
+                    </label>
+                    <label class="cs-option">
+                        <input type="radio" name="package" value="Full Detail">
+                        Full Detail
+                    </label>
+                    <label class="cs-option">
+                        <input type="radio" name="package" value="Add-ons only">
+                        Add-ons only
+                    </label>
+                </fieldset>
+                <fieldset class="cs-fieldset">
+                    <legend class="cs-legend">Add-Ons <span class="cs-optional">(optional)</span></legend>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="One-step paint correction">
+                        One-step paint correction
+                    </label>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="Clay bar treatment">
+                        Clay bar treatment
+                    </label>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="Hand waxing">
+                        Hand waxing
+                    </label>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="Steam-cleaned engine bay">
+                        Steam-cleaned engine bay
+                    </label>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="Engine dress-up">
+                        Engine dress-up
+                    </label>
+                    <label class="cs-option">
+                        <input type="checkbox" name="add-ons" value="Headliner steam cleaning">
+                        Headliner steam cleaning
+                    </label>
+                </fieldset>
                 <label class="cs-label">
                     Message
-                    <textarea class="cs-input cs-textarea" required name="Message" placeholder="Write message..."></textarea>
+                    <textarea class="cs-input cs-textarea" required name="Message" placeholder="Tell us about your vehicle's condition (e.g. light dust, heavy mud, pet hair, stains) and anything else we should know."></textarea>
                 </label>
                 <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
             </form>

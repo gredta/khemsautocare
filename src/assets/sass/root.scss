@@ -2475,6 +2475,40 @@ body.dark-mode {
     margin-bottom: 0.75rem;
     font-family: inherit;
   }
+  #contact-2320 .cs-fieldset {
+    width: 100%;
+    margin: 0.25rem 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+  #contact-2320 .cs-legend {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    margin-bottom: 0.5rem;
+    padding: 0;
+    color: var(--headerColor);
+  }
+  #contact-2320 .cs-optional {
+    opacity: 0.6;
+  }
+  #contact-2320 .cs-option {
+    font-size: 1rem;
+    color: var(--headerColor);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  #contact-2320 .cs-option input {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0;
+    accent-color: var(--primary);
+    cursor: pointer;
+  }
   #contact-2320 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
@@ -2665,7 +2699,8 @@ body.dark-mode {
     max-width: 32.625rem;
   }
   #contact-2320 .cs-services,
-  #contact-2320 .cs-phone {
+  #contact-2320 .cs-phone,
+  #contact-2320 .cs-half {
     width: 47%;
   }
   #contact-2320 .cs-button-solid {
@@ -2694,7 +2729,9 @@ body.dark-mode {
     background-color: #000;
     opacity: 0.4;
   }
-  body.dark-mode #contact-2320 .cs-label {
+  body.dark-mode #contact-2320 .cs-label,
+  body.dark-mode #contact-2320 .cs-legend,
+  body.dark-mode #contact-2320 .cs-option {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #contact-2320 .cs-input {
